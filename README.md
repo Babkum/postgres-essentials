@@ -31,11 +31,5 @@ Run
 ```bash
 docker run -p 5432:5432 \
 -e POSTGRES_PASSWORD=[POSTGRES_PASSWORD] \
--e POSTGRES_DB=[POSTGRES_DB] \
--e POSTGRES_USER=[POSTGRES_USER] \
-babkum/postgres-essentials:0.0.0 postgres \
--c shared_preload_libraries='pg_net, pg_cron' \
--c pg_net.database_name=[POSTGRES_DB] \
--c cron.database_name=[POSTGRES_DB] \
--c max_connections=200
+babkum/postgres-essentials:0.0.0
 ```
