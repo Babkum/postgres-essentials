@@ -1,4 +1,4 @@
-FROM postgres:16
+FROM --platform=linux/amd64 postgres:16
 LABEL Maintainer Babkum <developers@babkum.com>
 
 # Source DockerHub / Github:
