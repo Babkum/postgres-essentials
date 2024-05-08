@@ -24,6 +24,8 @@ Build
 git clone https://github.com/babkum/postgres_essentials
 cd postgres_essentials
 docker build -t babkum/postgres-essentials:0.0.0 .
+# If you intend to use the image on Railway (https://railway.app), build with the command below because Railway only supports amd64 platform
+docker buildx build -t babkum/postgres-essentials:0.0.0 --platform linux/amd64 .
 ```
 
 Run
